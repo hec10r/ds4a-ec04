@@ -347,6 +347,7 @@ def update_bar_chart(exchange, leverage, start_date, end_date):
         'layout':
             go.Layout(
                 title='PnL vs Trade type',
+                height=400,
                 colorway=['#000000', '#EF963B']
             )
     }
@@ -372,7 +373,8 @@ def update_daily_btc(start_date, end_date):
         ],
         'layout':
             go.Layout(
-                title='Daily BTC Price'
+                title='Daily BTC Price',
+		height=400
             )
     }
 
@@ -397,11 +399,11 @@ def update_balance(exchange, leverage, start_date, end_date):
         ],
         'layout':
             go.Layout(
-                title='Balance overtime'
+                title='Balance overtime',
+		height=400
             )
     }
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
-
+    app.run_server(debug=True, host='0.0.0.0')
