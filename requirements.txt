@@ -10,7 +10,7 @@ certifi==2019.9.11
 cffi==1.13.1
 Click==7.0
 colorama==0.4.1
-cryptography==2.7
+cryptography==3.2
 cycler==0.10.0
 dash==1.1.1
 dash-core-components==1.1.1
